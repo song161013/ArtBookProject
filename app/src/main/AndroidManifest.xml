@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sf.art"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="._5remoteviews.RemoteViews5Activity" />
+        <activity android:name="._5remoteviews.NotifyActivity" />
+        <activity android:name="._6drawable.DrawableActivity" />
+        <activity android:name="._11thread.ThreadTest" />
+        <activity android:name="._1activity._1activity" />
+        <activity android:name="._1activity.newActivity" />
+        <activity android:name="._2IPC.BinderActivity" />
+        <activity android:name="._7animation._7Animation" />
+        <activity android:name="._7animation._7ViewAnimation" />
+        <activity android:name="com.sf.art._3view_event._3viewEvetActivity" />
+
+        <activity
+            android:name="._2IPC._2SecondActivity"
+            android:process=":test" />
+        <activity android:name="._2IPC._2MessengerActivity" />
+
+        <service
+            android:name="._2IPC._2MessengerService"
+            android:process=":remote" />
+
+
+    </application>
+
+</manifest>
