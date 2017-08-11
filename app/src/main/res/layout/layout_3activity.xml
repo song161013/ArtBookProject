@@ -5,12 +5,18 @@
     android:orientation="vertical" >
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:onClick="_3ViewBaseBtn"
         android:id="@+id/_3view_base_btn"
+        android:gravity="end|center"
         android:background="@color/colorPrimary"
         android:text="View基础" />
 
+    <com.sf.art._3view_event.HorizonalScrollView
+        android:id="@+id/container"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
